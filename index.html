@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Optima AI Solutions - Automate Your Restaurant</title>
+    <meta name="description" content="Transform your restaurant operations with AI-powered automation solutions. Boost efficiency and customer satisfaction with smart chatbots, voice agents, and WhatsApp automation. Reduce staff workload, increase revenue, and enhance customer experience." />
+    <meta name="keywords" content="restaurant automation, AI chatbot, voice agent, WhatsApp automation, restaurant management, customer service, booking system, AI solutions, restaurant technology, digital transformation" />
+    <meta name="author" content="Optima AI Solutions" />
+    <meta property="og:title" content="Optima AI Solutions - Restaurant Automation" />
+    <meta property="og:description" content="Transform your restaurant operations with AI-powered automation solutions. Boost efficiency and customer satisfaction with smart chatbots, voice agents, and WhatsApp automation." />
+    <meta property="og:url" content="https://www.optimaai.co" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://www.optimaai.co/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Optima AI Solutions - Restaurant Automation" />
+    <meta name="twitter:description" content="Transform your restaurant operations with AI-powered automation solutions." />
+    <meta name="twitter:image" content="https://www.optimaai.co/og-image.jpg" />
+    <link rel="canonical" href="https://www.optimaai.co" />
+    <meta name="theme-color" content="#6366F1" />
+    <style>
+      .initial-loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+      .initial-loader::after {
+        content: '';
+        width: 48px;
+        height: 48px;
+        border: 4px solid #6366F1;
+        border-top-color: transparent;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="initial-loader"></div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

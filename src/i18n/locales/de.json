@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "services": "Dienstleistungen",
+    "howitworks": "Wie es funktioniert",
+    "casestudy": "Fallstudie",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Sparen Sie Zeit und steigern Sie Ihren Umsatz mit KI für Restaurants",
+    "subtitle": "Reduzieren Sie die Arbeitsbelastung des Personals, binden Sie Kunden und steigern Sie den Umsatz mit KI-Automatisierung",
+    "cta": {
+      "primary": "Kostenlose Testphase buchen",
+      "secondary": "So funktioniert's"
+    }
+  },
+  "about": {
+    "title": "Über uns",
+    "description": "Bei Optima AI Solutions unterstützen wir Restaurants dabei, in einer schnelllebigen Welt erfolgreich zu sein. Wir kombinieren Branchenwissen mit modernster KI, um echte Herausforderungen von Restaurants zu lösen.",
+    "mission": {
+      "title": "Unsere Mission",
+      "text": "Vereinfachen Sie Restaurantabläufe, steigern Sie den Umsatz und verbessern Sie das Gästeerlebnis durch intelligente Automatisierung – damit Sie sich auf das Wichtigste konzentrieren können: Ihre Gäste."
+    }
+  },
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "chatbots": {
+      "title": "KI-Chatbots",
+      "tag": "Website-Integration",
+      "question": "Von Anfragen überwältigt?",
+      "description": "Unsere Chatbots bearbeiten Buchungen, Stornierungen und FAQs sofort auf Ihrer Website und in sozialen Medien und binden Kunden durch personalisierte Empfehlungen zur Steigerung der Kundenbindung."
+    },
+    "voice": {
+      "title": "Sprachagenten",
+      "tag": "Telefon-Integration",
+      "question": "Verpasste Anrufe zu Stoßzeiten?",
+      "description": "Sprachagenten nehmen rund um die Uhr Anrufe entgegen, nehmen Bestellungen auf und verwalten Reservierungen, sodass sich Ihr Personal auf den persönlichen Service konzentrieren kann."
+    },
+    "whatsapp": {
+      "title": "WhatsApp-Automatisierung",
+      "tag": "Nachrichten-Integration",
+      "question": "Schwierigkeiten bei der Kundenbindung?",
+      "description": "Senden Sie automatisierte Erinnerungen, personalisierte Angebote und Feedback-Anfragen über WhatsApp, um wiederkehrende Besuche zu fördern und neue Gäste durch gezielte Kampagnen zu gewinnen."
+    }
+  },
+  "cta": {
+    "title": "Bereit, Zeit zu sparen und Ihr Restaurant wachsen zu lassen?",
+    "button": "Starten Sie Ihre kostenlose 14-tägige Testphase"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Bereit, Ihr Restaurant zu automatisieren? Lassen Sie uns sprechen.",
+    "form": {
+      "name": "Ihr Name",
+      "email": "Ihre E-Mail",
+      "restaurant": "Restaurant Name",
+      "message": "Ihre Nachricht",
+      "submit": "Kostenloses Beratungsgespräch vereinbaren",
+      "success": "Nachricht gesendet!"
+    }
+  },
+  "footer": {
+    "description": "Wir transformieren Restaurants mit KI-gestützten Automatisierungslösungen, die das Kundenerlebnis verbessern und Abläufe optimieren.",
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Abonnieren Sie, um die neuesten Nachrichten und Updates zu erhalten.",
+      "placeholder": "Ihre E-Mail-Adresse",
+      "button": "Abonnieren",
+      "success": "Abonniert!"
+    },
+    "contact": {
+      "title": "Kontaktinfo"
+    },
+    "quickLinks": {
+      "title": "Schnellzugriff"
+    },
+    "location": "Sitz in Deutschland, europaweit tätig",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "chatbot": {
+    "placeholder": "Nachricht eingeben...",
+    "greeting": "Hallo! Wie kann ich Ihnen heute helfen?",
+    "error": "Entschuldigung, ich habe momentan Verbindungsprobleme. Bitte versuchen Sie es später erneut."
+  },
+  "voice": {
+    "title": "Sprachassistent Demo",
+    "browserNotSupported": "Ihr Browser unterstützt keine Spracherkennung.",
+    "listening": "Ich höre zu... Sprechen Sie jetzt",
+    "clickToStart": "Klicken Sie auf das Mikrofon, um zu sprechen",
+    "error": "Entschuldigung, das habe ich nicht verstanden. Bitte versuchen Sie es erneut."
+  }
+}

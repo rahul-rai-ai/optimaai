@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "howitworks": "How It Works",
+    "casestudy": "Case Study",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Save Time and Boost Revenue with AI for Restaurants",
+    "subtitle": "Reduce staff workload, retain customers, and grow revenue with AI automation",
+    "cta": {
+      "primary": "Book A Free Trial",
+      "secondary": "See How It Works"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "description": "At Optima AI Solutions, we empower restaurants to thrive in a fast-paced world. We combine industry knowledge with cutting-edge AI to solve real restaurant challenges.",
+    "mission": {
+      "title": "Our Mission",
+      "text": "Simplify restaurant operations, boost revenue, and enhance guest experiences through intelligent automation—leaving you free to focus on what matters most: your customers."
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "chatbots": {
+      "title": "AI Chatbots",
+      "tag": "Website Integration",
+      "question": "Overwhelmed by inquiries?",
+      "description": "Our chatbots handle bookings, cancellations, and FAQs instantly on your website and social media, while engaging customers with personalized recommendations to boost retention."
+    },
+    "voice": {
+      "title": "Voice Agents",
+      "tag": "Phone Integration",
+      "question": "Missed calls during peak hours?",
+      "description": "Voice agents answer calls 24/7, take orders, and manage reservations, freeing your staff to focus on in-person service."
+    },
+    "whatsapp": {
+      "title": "WhatsApp Automation",
+      "tag": "Message Integration",
+      "question": "Struggling to retain customers?",
+      "description": "Send automated reminders, personalized offers, and feedback requests via WhatsApp to increase repeat visits and attract new diners with targeted campaigns."
+    }
+  },
+  "cta": {
+    "title": "Ready to Save Time and Grow Your Restaurant?",
+    "button": "Start Your Free 14-Day Trial"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Ready to automate your restaurant? Let's talk.",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "restaurant": "Restaurant Name",
+      "message": "Your Message",
+      "submit": "Schedule a Free Consultation",
+      "success": "Message Sent!"
+    }
+  },
+  "footer": {
+    "description": "Transforming restaurants with AI-powered automation solutions that enhance customer experience and streamline operations.",
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Subscribe to get the latest news and updates.",
+      "placeholder": "Your email address",
+      "button": "Subscribe",
+      "success": "Subscribed!"
+    },
+    "contact": {
+      "title": "Contact Info"
+    },
+    "quickLinks": {
+      "title": "Quick Links"
+    },
+    "location": "Based in Germany, serving Europe",
+    "rights": "All rights reserved."
+  },
+  "chatbot": {
+    "placeholder": "Type your message...",
+    "greeting": "Hello! How can I help you today?",
+    "error": "I'm sorry, I'm having trouble connecting right now. Please try again later."
+  },
+  "voice": {
+    "title": "Voice Assistant Demo",
+    "browserNotSupported": "Your browser doesn't support voice recognition.",
+    "listening": "Listening... Speak now",
+    "clickToStart": "Click the microphone to start speaking",
+    "error": "Sorry, I couldn't understand that. Please try again."
+  }
+}
