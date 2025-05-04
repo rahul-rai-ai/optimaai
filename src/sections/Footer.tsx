@@ -76,7 +76,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <Mail size={20} className="text-primary mr-3 mt-1 flex-shrink-0" />
-                <span className="text-text-secondary">info@optimaai.co</span>
+                <a href="mailto:info@optimaai.co" className="text-text-secondary hover:underline">info@optimaai.co</a>
               </li>
               <li className="flex items-start">
                 <Phone size={20} className="text-primary mr-3 mt-1 flex-shrink-0" />
