@@ -19,10 +19,9 @@ interface Tab {
 }
 
 const supabase = createClient(
-  import.meta.env.VITE_SUPABASE_URL || '',
+  'https://mlxfkqucoppyxlgvyrwk.supabase.co',
   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1seGZrcXVjb3BweXhsZ3Z5cndrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDU2NjQ8MTQsImV4cCI6MjA2MTI0MDgxNH0.0qVoA8T8KUU-tFOZKc1bw_9RiE2C91C9k9JbhfSJ8W4'
 );
-
 const ChatBot: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMinimized, setIsMinimized] = useState(false);
