@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Cookies from 'js-cookie';
+import { useTranslation } from 'react-i18next';
 import Button from './Button';
 
 const CookieBanner: React.FC = () => {
+  const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -23,14 +25,14 @@ const CookieBanner: React.FC = () => {
     <div className="fixed bottom-0 left-0 right-0 bg-background/95 backdrop-blur-sm shadow-lg z-50 p-4 border-t border-gray-200">
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-text-secondary text-sm flex-1">
-          We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.
+          {t('cookies.text')}
           <a href="/privacy-policy" className="text-primary hover:text-secondary ml-1">
-            Learn more
+            {t('cookies.learnMore', { defaultValue: 'Learn more' })}
           </a>
         </p>
         <div className="flex gap-4">
           <Button onClick={acceptCookies} className="whitespace-nowrap">
-            Accept Cookies
+            {t('cookies.button')}
           </Button>
         </div>
       </div>
