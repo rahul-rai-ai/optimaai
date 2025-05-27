@@ -1,93 +1,91 @@
+// src/i18n/locales/en.json
 {
-  "nav": {
-    "home": "Home",
-    "about": "About",
-    "services": "Services",
-    "howitworks": "How It Works",
-    "casestudy": "Case Study",
-    "contact": "Contact"
-  },
-  "hero": {
-    "title": "Save Time and Boost Revenue with AI for Restaurants",
-    "subtitle": "Reduce staff workload, retain customers, and grow revenue with AI automation",
-    "cta": {
-      "primary": "Book A Free Trial",
-      "secondary": "See How It Works"
-    }
-  },
-  "about": {
-    "title": "About Us",
-    "description": "At Optima AI Solutions, we empower restaurants to thrive in a fast-paced world. We combine industry knowledge with cutting-edge AI to solve real restaurant challenges.",
-    "mission": {
-      "title": "Our Mission",
-      "text": "Simplify restaurant operations, boost revenue, and enhance guest experiences through intelligent automation—leaving you free to focus on what matters most: your customers."
-    }
-  },
-  "services": {
-    "title": "Our Services",
-    "chatbots": {
-      "title": "AI Chatbots",
-      "tag": "Website Integration",
-      "question": "Overwhelmed by inquiries?",
-      "description": "Our chatbots handle bookings, cancellations, and FAQs instantly on your website and social media, while engaging customers with personalized recommendations to boost retention."
-    },
-    "voice": {
-      "title": "Voice Agents",
-      "tag": "Phone Integration",
-      "question": "Missed calls during peak hours?",
-      "description": "Voice agents answer calls 24/7, take orders, and manage reservations, freeing your staff to focus on in-person service."
-    },
-    "whatsapp": {
-      "title": "WhatsApp Automation",
-      "tag": "Message Integration",
-      "question": "Struggling to retain customers?",
-      "description": "Send automated reminders, personalized offers, and feedback requests via WhatsApp to increase repeat visits and attract new diners with targeted campaigns."
-    }
-  },
-  "cta": {
-    "title": "Ready to Save Time and Grow Your Restaurant?",
-    "button": "Start Your Free 14-Day Trial"
-  },
-  "contact": {
-    "title": "Contact Us",
-    "subtitle": "Ready to automate your restaurant? Let's talk.",
-    "form": {
-      "name": "Your Name",
-      "email": "Your Email",
-      "restaurant": "Restaurant Name",
-      "message": "Your Message",
-      "submit": "Schedule a Free Consultation",
-      "success": "Message Sent!"
-    }
-  },
-  "footer": {
-    "description": "Transforming restaurants with AI-powered automation solutions that enhance customer experience and streamline operations.",
-    "newsletter": {
-      "title": "Newsletter",
-      "description": "Subscribe to get the latest news and updates.",
-      "placeholder": "Your email address",
-      "button": "Subscribe",
-      "success": "Subscribed!"
-    },
-    "contact": {
-      "title": "Contact Info"
-    },
-    "quickLinks": {
-      "title": "Quick Links"
-    },
-    "location": "Based in Germany, serving Europe",
-    "rights": "All rights reserved."
-  },
-  "chatbot": {
-    "placeholder": "Type your message...",
-    "greeting": "Hello! How can I help you today?",
-    "error": "I'm sorry, I'm having trouble connecting right now. Please try again later."
-  },
-  "voice": {
-    "title": "Voice Assistant Demo",
-    "browserNotSupported": "Your browser doesn't support voice recognition.",
-    "listening": "Listening... Speak now",
-    "clickToStart": "Click the microphone to start speaking",
-    "error": "Sorry, I couldn't understand that. Please try again."
-  }
+  "navigation.home": "Home",
+  "navigation.about": "About Us",
+  "navigation.services": "Services",
+  "navigation.howItWorks": "How It Works",
+  "navigation.caseStudy": "Case Study",
+  "navigation.contact": "Contact",
+  "home.title": "Save Time and Boost Revenue with AI for Hotels & Restaurants",
+  "home.subtitle": "Reduce staff workload, improve guest experience, and increase revenue with intelligent automation",
+  "home.button.trial": "Start Your Free Trial",
+  "home.button.howItWorks": "How It Works",
+  "home.stats.response": "Faster Response Time",
+  "home.stats.support": "Customer Support",
+  "home.stats.bookings": "More Bookings",
+  "about.title": "About Us",
+  "about.description": "At Optima AI Solutions, we empower hotels and restaurants to thrive in a fast-paced world...",
+  "about.mission.title": "Our Mission",
+  "about.mission.text": "Simplify hospitality operations, boost revenue, and enhance guest experiences...",
+  "services.title": "Our Services",
+  "services.chatbots": "AI Chatbots",
+  "services.voice": "Voice Agents",
+  "services.whatsapp": "WhatsApp Automation",
+  "services.websiteIntegration": "Website Integration",
+  "services.description": "Overwhelmed by guest inquiries? Our AI chatbots handle bookings...",
+  "services.features.booking": "Instant Booking Management",
+  "services.features.faq": "Smart FAQ Responses",
+  "services.features.multilanguage": "Multi-language Support",
+  "services.features.preferences": "Guest Preference Learning",
+  "services.features.availability": "24/7 Availability",
+  "services.features.analytics": "Analytics Dashboard",
+  "services.button.trial": "Start Your Free Trial",
+  "howItWorks.title": "How It Works",
+  "howItWorks.step1.title": "Consultation",
+  "howItWorks.step1.text": "We analyze your restaurant's unique challenges and goals.",
+  "howItWorks.step2.title": "Customization",
+  "howItWorks.step2.text": "Our team tailors AI solutions to fit your operations seamlessly.",
+  "howItWorks.step3.title": "Implementation",
+  "howItWorks.step3.text": "We integrate chatbots, voice agents, and automation with minimal disruption.",
+  "howItWorks.step4.title": "Optimization",
+  "howItWorks.step4.text": "Ongoing support ensures your AI tools evolve with your business.",
+  "caseStudy.title": "Success Stories",
+  "caseStudy.subtitle": "How leading hotels and restaurants across Europe transformed their operations...",
+  "caseStudy.challenges.title": "The Challenges",
+  "caseStudy.challenges.waitTimes": "Long Wait Times",
+  "caseStudy.challenges.staff": "Staff Overwhelm",
+  "caseStudy.challenges.opportunities": "Missed Opportunities",
+  "caseStudy.solution.title": "Our Solution",
+  "caseStudy.solution.chatbot": "AI Chatbot",
+  "caseStudy.solution.voice": "Voice Agent",
+  "caseStudy.results.title": "Remarkable Results",
+  "caseStudy.results.response": "Faster Response",
+  "caseStudy.results.bookings": "More Bookings",
+  "caseStudy.results.satisfaction": "Increase in Guest Satisfaction",
+  "caseStudy.results.savings": "Annual Savings",
+  "caseStudy.benefits.title": "Key Benefits",
+  "caseStudy.benefits.operational": "Operational Excellence",
+  "caseStudy.benefits.revenue": "Revenue Growth",
+  "caseStudy.benefits.experience": "Enhanced Experience",
+  "contact.title": "Contact",
+  "contact.subtitle": "Ready to automate your business? Let’s talk.",
+  "contact.whyChooseUs.title": "Why Choose Us?",
+  "contact.whyChooseUs.support": "24/7 Support",
+  "contact.whyChooseUs.guidance": "Expert Guidance",
+  "contact.form.name": "Your Name",
+  "contact.form.email": "Your Email",
+  "contact.form.restaurant": "Restaurant Name",
+  "contact.form.message": "Your Message",
+  "contact.form.button": "Schedule a Free Consultation",
+  "footer.title": "Optima AI Solutions",
+  "footer.description": "Transforming hotels and restaurants with AI-powered automation solutions...",
+  "footer.quickLinks.title": "Quick Links",
+  "footer.quickLinks.home": "Home",
+  "footer.quickLinks.about": "About Us",
+  "footer.quickLinks.services": "Services",
+  "footer.quickLinks.howItWorks": "How It Works",
+  "footer.quickLinks.contact": "Contact",
+  "footer.contact.title": "Contact",
+  "footer.contact.email": "info@optimaai.co",
+  "footer.contact.phone": "+491622968335",
+  "footer.location": "Based in Germany, operating across Europe",
+  "footer.newsletter.title": "Newsletter",
+  "footer.newsletter.description": "Subscribe to our newsletter for the latest updates and insights.",
+  "footer.newsletter.placeholder": "Your Email Address",
+  "footer.newsletter.button": "Subscribe",
+  "footer.copyright": "© 2025 Optima AI Solutions. All Rights Reserved.",
+  "chatbot.greeting": "Try me out! 👋",
+  "chatbot.button": "Start a conversation",
+  "cookies.text": "We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.",
+  "cookies.button": "Accept Cookies"
 }
