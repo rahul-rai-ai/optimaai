@@ -1,7 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Send, X, Minimize2, Maximize2, MessageSquare, Bot, Sparkles, Users, Search, Phone } from 'lucide-react';
+import {
+  Send, X, Minimize2, Maximize2, MessageSquare, Bot, Sparkles, Users, Phone
+} from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { createClient } from '@supabase/supabase-js';
 import { motion, AnimatePresence } from 'framer-motion';
 
 interface Message {
@@ -18,10 +19,6 @@ interface Tab {
   action: () => void;
 }
 
-const supabase = createClient(
-  'https://mlxfkqucoppyxlgvyrwk.supabase.co',
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1seGZrcXVjb3BweXhsZ3Z5cndrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDU2NjQ8MTQsImV4cCI6MjA2MTI0MDgxNH0.0qVoA8T8KUU-tFOZKc1bw_9RiE2C91C9k9JbhfSJ8W4'
-);
 const ChatBot: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isMinimized, setIsMinimized] = useState(false);
@@ -59,7 +56,6 @@ const ChatBot: React.FC = () => {
         setShowGreeting(true);
       }
     }, 3000);
-
     return () => clearTimeout(timer);
   }, [isOpen]);
 
@@ -99,30 +95,50 @@ const ChatBot: React.FC = () => {
     setMessage('');
 
     try {
-      const { data, error } = await supabase.functions.invoke('chat', {
-        body: { 
-          message: messageToSend.trim(),
-          lang: i18n.language 
-        },
+      const response = await fetch("https://api.openai.com/v1/chat/completions", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer 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` // 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        },
+        body: JSON.stringify({
+          model: "gpt-4",
+          messages: [
+            {
+              role: "system",
+              content:
+                i18n.language === 'de'
+                  ? "Du bist ein intelligenter KI-Assistent von Optima AI. Antworte professionell und hilfsbereit. Wenn Nutzer nach Preisen, Demos oder Meetings fragen, leite sie bitte an das Kontaktformular unter /#contact weiter."
+                  : "You are a smart AI assistant for Optima AI. Answer helpfully and professionally. If users ask about pricing, demos, or meetings, refer them to the contact form at /#contact."
+            },
+            {
+              role: "user",
+              content: messageToSend.trim()
+            }
+          ],
+          temperature: 0.7
+        })
       });
 
-      if (error) throw error;
+      const result = await response.json();
 
       await simulateTyping(() => {
         const botMessage: Message = {
           id: (Date.now() + 1).toString(),
-          text: data.response || t('chatbot.error'),
+          text: (result?.choices?.[0]?.message?.content || t('chatbot.error')).replace(
+            /\[(.*?)\]\((.*?)\)/g,
+            '<a href="$2" class="text-primary underline" target="_blank">$1</a>'
+          ),
           isUser: false,
           timestamp: new Date(),
         };
         setMessages((prev) => [...prev, botMessage]);
       });
     } catch (error) {
-      console.error('Error sending message:', error);
+      console.error('Error:', error);
       await simulateTyping(() => {
         const errorMessage: Message = {
           id: (Date.now() + 1).toString(),
-          text: t('chatbot.error'),
+          text: t('chatbot.error') || "Something went wrong. Please try again or contact us.",
           isUser: false,
           timestamp: new Date(),
         };
@@ -161,34 +177,21 @@ const ChatBot: React.FC = () => {
 
   return (
     <>
+      {/* Greeting Bubble */}
       <AnimatePresence>
         {showGreeting && (
-          <motion.div 
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 50 }}
-            className="fixed bottom-24 right-4 z-50"
-          >
+          <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 50 }} className="fixed bottom-24 right-4 z-50">
             <div className="bg-white rounded-lg shadow-xl p-4 max-w-[300px]">
               <div className="flex items-center gap-2 mb-3">
                 <Sparkles className="text-primary" size={20} />
                 <span className="font-medium">Try me out! 👋</span>
               </div>
-              <p className="text-text-secondary text-sm mb-4">
-                {t('chatbot.greeting')}
-              </p>
+              <p className="text-text-secondary text-sm mb-4">{t('chatbot.greeting')}</p>
               <div className="flex justify-between items-center">
-                <button
-                  onClick={toggleChat}
-                  className="text-primary hover:text-secondary transition-colors text-sm font-medium"
-                >
+                <button onClick={toggleChat} className="text-primary hover:text-secondary text-sm font-medium">
                   Start a conversation
                 </button>
-                <button
-                  onClick={() => setShowGreeting(false)}
-                  className="text-gray-400 hover:text-gray-600 transition-colors"
-                  aria-label="Dismiss greeting"
-                >
+                <button onClick={() => setShowGreeting(false)} className="text-gray-400 hover:text-gray-600">
                   <X size={16} />
                 </button>
               </div>
@@ -197,6 +200,7 @@ const ChatBot: React.FC = () => {
         )}
       </AnimatePresence>
 
+      {/* Chat UI */}
       <div className="fixed bottom-4 right-4 z-50">
         {!isOpen && (
           <motion.button
@@ -204,45 +208,24 @@ const ChatBot: React.FC = () => {
             animate={{ scale: 1 }}
             onClick={toggleChat}
             className="bg-primary text-white p-4 rounded-full shadow-lg hover:bg-secondary transition-colors duration-300 group relative"
-            aria-label="Open chat"
           >
             <MessageSquare size={24} />
-            <span className="absolute -top-2 -right-2 bg-red-500 text-white w-5 h-5 rounded-full text-xs flex items-center justify-center animate-pulse">
-              1
-            </span>
+            <span className="absolute -top-2 -right-2 bg-red-500 text-white w-5 h-5 rounded-full text-xs flex items-center justify-center animate-pulse">1</span>
           </motion.button>
         )}
 
         {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            className={`bg-white rounded-lg shadow-xl transition-all duration-300 ${
-              isMinimized ? 'h-14' : 'h-[600px]'
-            } w-[380px] flex flex-col`}
-          >
+          <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} className={`bg-white rounded-lg shadow-xl ${isMinimized ? 'h-14' : 'h-[600px]'} w-[380px] flex flex-col`}>
             <div className="flex items-center justify-between p-4 border-b">
               <div className="flex items-center gap-2">
                 <Bot className="text-primary" size={20} />
-                <span className="font-medium">Oliver - AI Assistant</span>
+                <span className="font-medium">Oliver – AI Assistant</span>
               </div>
               <div className="flex items-center gap-2">
-                <button
-                  onClick={toggleChat}
-                  className="text-gray-500 hover:text-primary transition-colors"
-                  aria-label={isMinimized ? 'Maximize chat' : 'Minimize chat'}
-                >
-                  {isMinimized ? (
-                    <Maximize2 size={18} />
-                  ) : (
-                    <Minimize2 size={18} />
-                  )}
+                <button onClick={toggleChat} className="text-gray-500 hover:text-primary">
+                  {isMinimized ? <Maximize2 size={18} /> : <Minimize2 size={18} />}
                 </button>
-                <button
-                  onClick={closeChat}
-                  className="text-gray-500 hover:text-primary transition-colors"
-                  aria-label="Close chat"
-                >
+                <button onClick={closeChat} className="text-gray-500 hover:text-primary">
                   <X size={18} />
                 </button>
               </div>
@@ -253,13 +236,7 @@ const ChatBot: React.FC = () => {
                 <div className="p-4 border-b">
                   <div className="grid grid-cols-3 gap-2">
                     {tabs.map((tab) => (
-                      <motion.button
-                        key={tab.id}
-                        whileHover={{ scale: 1.02 }}
-                        whileTap={{ scale: 0.98 }}
-                        onClick={tab.action}
-                        className="flex flex-col items-center gap-2 p-3 rounded-lg bg-background-light hover:bg-primary/10 transition-colors text-center"
-                      >
+                      <motion.button key={tab.id} whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={tab.action} className="flex flex-col items-center gap-2 p-3 rounded-lg bg-background-light hover:bg-primary/10 text-center">
                         <span className="text-primary">{tab.icon}</span>
                         <span className="text-sm font-medium truncate">{tab.label}</span>
                       </motion.button>
@@ -269,23 +246,8 @@ const ChatBot: React.FC = () => {
 
                 <div className="flex-1 overflow-y-auto p-4 space-y-4">
                   {messages.map((msg) => (
-                    <motion.div
-                      key={msg.id}
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      className={`flex ${
-                        msg.isUser ? 'justify-end' : 'justify-start'
-                      }`}
-                    >
-                      <div
-                        className={`max-w-[80%] p-3 rounded-lg ${
-                          msg.isUser
-                            ? 'bg-primary text-white'
-                            : 'bg-gray-100 text-gray-800'
-                        } whitespace-pre-line`}
-                      >
-                        {msg.text}
-                      </div>
+                    <motion.div key={msg.id} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className={`flex ${msg.isUser ? 'justify-end' : 'justify-start'}`}>
+                      <div className={`max-w-[80%] p-3 rounded-lg ${msg.isUser ? 'bg-primary text-white' : 'bg-gray-100 text-gray-800'}`} dangerouslySetInnerHTML={{ __html: msg.text }}></div>
                     </motion.div>
                   ))}
                   {isTyping && (
@@ -311,13 +273,7 @@ const ChatBot: React.FC = () => {
                       placeholder={t('chatbot.placeholder')}
                       className="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                     />
-                    <motion.button
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      type="submit"
-                      className="bg-primary text-white p-2 rounded-lg hover:bg-secondary transition-colors"
-                      aria-label="Send message"
-                    >
+                    <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} type="submit" className="bg-primary text-white p-2 rounded-lg hover:bg-secondary transition-colors">
                       <Send size={20} />
                     </motion.button>
                   </div>
