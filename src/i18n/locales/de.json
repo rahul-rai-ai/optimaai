@@ -8,8 +8,8 @@
     "contact": "Kontakt"
   },
   "hero": {
-    "title": "Sparen Sie Zeit und steigern Sie Ihren Umsatz mit WhatsApp-Automatisierung für Hotels & Restaurants",
-    "subtitle": "Reduzieren Sie die Arbeitsbelastung des Personals, verbessern Sie das Gästeerlebnis und steigern Sie den Umsatz mit intelligenter WhatsApp-Automatisierung",
+    "title": "Sparen Sie Zeit und steigern Sie Ihren Umsatz mit KI für Hotels & Restaurants",
+    "subtitle": "Reduzieren Sie die Arbeitsbelastung des Personals, verbessern Sie das Gästeerlebnis und steigern Sie den Umsatz mit intelligenter Automatisierung",
     "cta": {
       "primary": "Kostenlose Testphase starten",
       "secondary": "So funktioniert's"
@@ -31,34 +31,47 @@
   },
   "about": {
     "title": "Über uns",
-    "description": "Bei Optima AI Solutions unterstützen wir Hotels und Restaurants dabei, in einer schnelllebigen Welt erfolgreich zu sein. Wir kombinieren Branchenwissen mit modernster WhatsApp-Automatisierung, um Abläufe zu optimieren, den Umsatz zu steigern und die Gästezufriedenheit in ganz Europa zu verbessern.",
+    "description": "Bei Optima AI Solutions unterstützen wir Hotels und Restaurants dabei, in einer schnelllebigen Welt erfolgreich zu sein. Wir wurden gegründet, um die Herausforderungen von Gastronomiebetrieben in ganz Europa zu bewältigen, indem wir Branchenwissen mit modernster KI kombinieren, um Abläufe zu optimieren, den Umsatz zu steigern und die Gästezufriedenheit zu verbessern.",
     "mission": {
       "title": "Unsere Mission",
-      "text": "Vereinfachen Sie Gastronomiebetriebe, steigern Sie den Umsatz und verbessern Sie das Gästeerlebnis durch WhatsApp-Automatisierung – damit Sie sich auf unvergessliche Erlebnisse für Ihre Gäste konzentrieren können."
-    },
-    "vision": {
-      "title": "Unsere Vision",
-      "text": "Die Gastronomiebranche zu revolutionieren, indem wir WhatsApp-Automatisierung für jedes Restaurant und Hotel zugänglich machen und ihnen ermöglichen, außergewöhnliche Gästeerlebnisse bei maximaler betrieblicher Effizienz zu bieten."
-    },
-    "stats": {
-      "clients": {
-        "value": "500+",
-        "label": "Zufriedene Kunden"
-      },
-      "revenue": {
-        "value": "60%",
-        "label": "Durchschnittliches Umsatzwachstum"
-      }
-    },
-    "cta": "Starten Sie jetzt"
+      "text": "Vereinfachen Sie Gastronomiebetriebe, steigern Sie den Umsatz und verbessern Sie das Gästeerlebnis durch intelligente Automatisierung – damit Sie sich auf das Wichtigste konzentrieren können: unvergessliche Erlebnisse für Ihre Gäste zu schaffen."
+    }
   },
   "services": {
     "title": "Unsere Dienstleistungen",
+    "chatbots": {
+      "title": "KI-Chatbots",
+      "tag": "Website-Integration",
+      "question": "Von Anfragen überwältigt?",
+      "description": "Unsere Chatbots bearbeiten Buchungen, Stornierungen und FAQs sofort auf Ihrer Website und in sozialen Medien und binden Kunden durch personalisierte Empfehlungen.",
+      "features": [
+        "Sofortiges Buchungsmanagement",
+        "Intelligente FAQ-Antworten",
+        "Mehrsprachige Unterstützung",
+        "Gästepräferenz-Lernen",
+        "24/7 Verfügbarkeit",
+        "Analytics-Dashboard"
+      ]
+    },
+    "voice": {
+      "title": "Sprachagenten",
+      "tag": "Telefon-Integration",
+      "question": "Verpasste Anrufe zu Stoßzeiten?",
+      "description": "Sprachagenten nehmen rund um die Uhr Anrufe entgegen, nehmen Bestellungen auf und verwalten Reservierungen, sodass sich Ihr Personal auf den persönlichen Service konzentrieren kann.",
+      "features": [
+        "Natürliche Sprachinteraktionen",
+        "24/7 Anrufbearbeitung",
+        "Nahtloses Buchungssystem",
+        "Mehrsprachige Unterstützung",
+        "Stoßzeitenmanagement",
+        "Anrufanalyse"
+      ]
+    },
     "whatsapp": {
       "title": "WhatsApp-Automatisierung",
       "tag": "Nachrichten-Integration",
       "question": "Schwierigkeiten bei der Kundenbindung?",
-      "description": "Senden Sie automatisierte Erinnerungen, personalisierte Angebote und Feedback-Anfragen über WhatsApp, um wiederkehrende Besuche zu fördern und neue Gäste durch gezielte Kampagnen für Hotels und Restaurants zu gewinnen.",
+      "description": "Senden Sie automatisierte Erinnerungen, personalisierte Angebote und Feedback-Anfragen über WhatsApp, um wiederkehrende Besuche zu fördern und neue Gäste durch gezielte Kampagnen zu gewinnen.",
       "features": [
         "Automatisierte Updates",
         "Personalisierte Angebote",
@@ -69,34 +82,35 @@
       ]
     },
     "startFreeTrial": "Kostenlose Testphase starten",
-    "messageIntegration": "Nachrichten-Integration"
+    "websiteIntegration": "Website-Integration",
+    "messageIntegration": "Nachrichten-Integration",
+    "phoneIntegration": "Telefon-Integration",
+    "learnMore": "Mehr erfahren"
   },
   "howItWorks": {
     "title": "Wie es funktioniert",
-    "subtitle": "Transformieren Sie Ihr Gastronomieunternehmen mit unserem optimierten Implementierungsprozess",
     "steps": {
       "consultation": {
         "title": "Beratung",
-        "description": "Wir analysieren die spezifischen Herausforderungen und Ziele Ihres Hotels oder Restaurants."
+        "description": "Wir analysieren die spezifischen Herausforderungen und Ziele Ihres Restaurants."
       },
       "customization": {
         "title": "Anpassung",
-        "description": "Unser Team passt WhatsApp-Automatisierung nahtlos an Ihre Abläufe an."
+        "description": "Unser Team passt KI-Lösungen nahtlos an Ihre Abläufe an."
       },
       "implementation": {
         "title": "Implementierung",
-        "description": "Wir integrieren WhatsApp-Automatisierung mit minimaler Störung."
+        "description": "Wir integrieren Chatbots, Sprachagenten und Automatisierung mit minimaler Störung."
       },
       "optimization": {
         "title": "Optimierung",
-        "description": "Kontinuierliche Unterstützung stellt sicher, dass sich Ihre WhatsApp-Tools mit Ihrem Geschäft weiterentwickeln."
+        "description": "Kontinuierliche Unterstützung stellt sicher, dass sich Ihre KI-Tools mit Ihrem Geschäft weiterentwickeln."
       }
-    },
-    "cta": "Kostenlose Testphase starten"
+    }
   },
   "caseStudy": {
     "title": "Erfolgsgeschichten",
-    "subtitle": "Wie führende Hotels und Restaurants in Europa ihre Abläufe mit WhatsApp-Automatisierung transformiert haben und jährlich Millionen von Gästeinteraktionen bewältigen",
+    "subtitle": "Wie führende Hotels und Restaurants in Europa ihre Abläufe mit KI transformiert haben und jährlich Millionen von Gästeinteraktionen bewältigen",
     "challenges": {
       "title": "Die Herausforderungen",
       "items": {
@@ -110,16 +124,20 @@
         },
         "missedOpportunities": {
           "title": "Verpasste Chancen",
-          "description": "Verlorener Umsatz durch unbeantwortete Nachrichten und verzögerte Antworten"
+          "description": "Verlorener Umsatz durch unbeantwortete Anrufe und verzögerte Antworten"
         }
       }
     },
     "solution": {
       "title": "Unsere Lösung",
       "items": {
-        "whatsapp": {
-          "title": "WhatsApp-Automatisierung",
-          "description": "24/7 sofortiger Gästeservice über Nachrichten"
+        "chatbot": {
+          "title": "KI-Chatbot",
+          "description": "24/7 sofortiger Gästeservice"
+        },
+        "voice": {
+          "title": "Sprachagent",
+          "description": "Automatisierte Anrufbearbeitung"
         }
       }
     },
@@ -173,31 +191,20 @@
     "form": {
       "name": "Ihr Name",
       "email": "Ihre E-Mail",
-      "restaurant": "Hotel- oder Restaurantname",
+      "restaurant": "Restaurantname",
       "message": "Ihre Nachricht",
       "submit": "Kostenloses Beratungsgespräch vereinbaren",
       "success": "Nachricht gesendet!"
     },
     "whyChooseUs": {
       "title": "Warum uns wählen?",
-      "features": {
-        "support": {
-          "title": "24/7 KI-Support",
-          "description": "Unser KI-gestütztes Support-System ist immer bereit zu helfen"
-        },
-        "team": {
-          "title": "Expertenteam",
-          "description": "Dedizierte Spezialisten für maßgeschneiderte Lösungen"
-        },
-        "response": {
-          "title": "Schnelle Antwort",
-          "description": "Erhalten Sie innerhalb weniger Stunden Antworten auf Ihre Fragen"
-        }
+      "support": {
+        "title": "24/7 Unterstützung",
+        "description": "Unser Team ist immer für Sie da, um Ihren Erfolg zu sichern"
       },
-      "directContact": {
-        "title": "Direkter Kontakt",
-        "email": "info@optimaai.co",
-        "description": "Möchten Sie uns direkt eine E-Mail schicken? Wir melden uns innerhalb von 24 Stunden an Werktagen bei Sie."
+      "expertise": {
+        "title": "Fachkundige Beratung",
+        "description": "Erhalten Sie maßgeschneiderte Lösungen für Ihr Unternehmen"
       }
     }
   },
@@ -207,7 +214,7 @@
     "accept": "Cookies akzeptieren"
   },
   "footer": {
-    "description": "Wir transformieren Hotels und Restaurants mit WhatsApp-Automatisierungslösungen, die das Gästeerlebnis verbessern und Abläufe optimieren.",
+    "description": "Wir transformieren Hotels und Restaurants mit KI-gestützten Automatisierungslösungen, die das Gästeerlebnis verbessern und Abläufe optimieren.",
     "quickLinks": {
       "title": "Schnellzugriff"
     },
@@ -223,5 +230,16 @@
       "success": "Vielen Dank für Ihr Abonnement!"
     },
     "rights": "Alle Rechte vorbehalten."
+  },
+  "banner": {
+    "trial": "Buchen Sie jetzt Ihre kostenlose Testphase und transformieren Sie Ihr Hotel oder Restaurant mit KI!"
+  },
+  "cta": {
+    "button": "Los geht's"
+  },
+  "ctaBanner": {
+    "message": "Bereit, Zeit zu sparen und Ihr Restaurant zu erweitern?",
+    "button": "Starten Sie Ihre kostenlose 14-Tage-Testphase",
+    "dismiss": "Banner schließen"
   }
 }
