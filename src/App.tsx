@@ -1,4 +1,5 @@
 import React, { useEffect, Suspense } from 'react';
+import { useTranslation } from 'react-i18next';
 import Navbar from './components/Navbar';
 import Hero from './sections/Hero';
 import About from './sections/About';
@@ -8,14 +9,16 @@ import CaseStudy from './sections/CaseStudy';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 import CtaBanner from './components/CtaBanner';
-import ChatBot from './components/ChatBot';
 import FloatingElements from './components/FloatingElements';
 import MouseFollower from './components/MouseFollower';
 import CookieBanner from './components/CookieBanner';
 import { initGA, logPageView } from './utils/analytics';
 import LoadingSpinner from './components/LoadingSpinner';
+import './i18n'; // Initialize translations
 
 function App() {
+  const { t } = useTranslation();
+
   useEffect(() => {
     initGA();
     logPageView();
@@ -32,7 +35,7 @@ function App() {
         <FloatingElements />
         <div className="bg-primary/10 text-center py-2 px-4">
           <p className="text-primary font-medium">
-            Book your free trial now and transform your restaurant with AI!
+            {t('banner.trial')}
           </p>
         </div>
         <Navbar />
@@ -46,7 +49,6 @@ function App() {
         </main>
         <Footer />
         <CtaBanner />
-        <ChatBot />
         <CookieBanner />
       </Suspense>
     </div>
