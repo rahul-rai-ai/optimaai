@@ -38,14 +38,7 @@ const Services: React.FC = () => {
       tag: t('services.chatbots.tag'),
       description: t('services.chatbots.question'),
       longDescription: t('services.chatbots.description'),
-      features: [
-        'Instant Booking Management',
-        'Smart FAQ Responses',
-        'Personalized Recommendations',
-        'Multi-platform Integration',
-        '24/7 Availability',
-        'Analytics Dashboard'
-      ],
+      features: t('services.chatbots.features', { returnObjects: true }),
       image: 'https://images.pexels.com/photos/7438101/pexels-photo-7438101.jpeg',
       icon: <MessageSquare className="text-primary h-8 w-8" />
     },
@@ -54,14 +47,7 @@ const Services: React.FC = () => {
       tag: t('services.voice.tag'),
       description: t('services.voice.question'),
       longDescription: t('services.voice.description'),
-      features: [
-        'Natural Voice Interactions',
-        '24/7 Call Handling',
-        'Seamless Order Taking',
-        'Multi-language Support',
-        'Peak Hour Management',
-        'Call Analytics'
-      ],
+      features: t('services.voice.features', { returnObjects: true }),
       image: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg',
       icon: <Phone className="text-primary h-8 w-8" />
     },
@@ -70,14 +56,7 @@ const Services: React.FC = () => {
       tag: t('services.whatsapp.tag'),
       description: t('services.whatsapp.question'),
       longDescription: t('services.whatsapp.description'),
-      features: [
-        'Automated Reminders',
-        'Personalized Offers',
-        'Feedback Collection',
-        'Customer Re-engagement',
-        'Campaign Management',
-        'Performance Tracking'
-      ],
+      features: t('services.whatsapp.features', { returnObjects: true }),
       image: 'https://images.pexels.com/photos/5053740/pexels-photo-5053740.jpeg',
       icon: <MessageCircle className="text-primary h-8 w-8" />
     }
@@ -154,7 +133,7 @@ const Services: React.FC = () => {
             </p>
 
             <div className="grid grid-cols-2 gap-4 mb-8">
-              {services[activeTab].features.map((feature, index) => (
+              {services[activeTab].features.map((feature: string, index: number) => (
                 <motion.div 
                   key={index} 
                   className="flex items-center gap-2"
@@ -176,7 +155,7 @@ const Services: React.FC = () => {
                 className="flex items-center gap-2 text-primary hover:text-secondary transition-colors"
                 whileHover={{ x: 10 }}
               >
-                Learn More
+                {t('services.learnMore')}
                 <ArrowRight size={20} />
               </motion.button>
             </div>
