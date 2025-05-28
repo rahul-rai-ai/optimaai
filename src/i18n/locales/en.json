@@ -8,8 +8,8 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Save Time and Boost Revenue with WhatsApp Automation for Hotels & Restaurants",
-    "subtitle": "Reduce staff workload, enhance guest experience, and grow revenue with intelligent WhatsApp automation",
+    "title": "Save Time and Boost Revenue with AI for Hotels & Restaurants",
+    "subtitle": "Reduce staff workload, enhance guest experience, and grow revenue with intelligent automation",
     "cta": {
       "primary": "Start Your Free Trial",
       "secondary": "See How It Works"
@@ -31,19 +31,47 @@
   },
   "about": {
     "title": "About Us",
-    "description": "At Optima AI Solutions, we empower hotels and restaurants to thrive in a fast-paced world. We combine industry knowledge with cutting-edge WhatsApp automation to streamline operations, boost revenue, and enhance guest satisfaction across Europe.",
+    "description": "At Optima AI Solutions, we empower hotels and restaurants to thrive in a fast-paced world. We were founded to address the challenges faced by hospitality businesses across Europe, combining industry knowledge with cutting-edge AI to streamline operations, boost revenue, and enhance guest satisfaction.",
     "mission": {
       "title": "Our Mission",
-      "text": "Simplify hospitality operations, boost revenue, and enhance guest experiences through WhatsApp automation—leaving you free to focus on creating memorable experiences for your guests."
+      "text": "Simplify hospitality operations, boost revenue, and enhance guest experiences through intelligent automation—leaving you free to focus on what matters most: creating memorable experiences for your guests."
     }
   },
   "services": {
     "title": "Our Services",
+    "chatbots": {
+      "title": "AI Chatbots",
+      "tag": "Website Integration",
+      "question": "Overwhelmed by inquiries?",
+      "description": "Our chatbots handle bookings, cancellations, and FAQs instantly on your website and social media, while engaging customers with personalized recommendations to boost retention.",
+      "features": [
+        "Instant Booking Management",
+        "Smart FAQ Responses",
+        "Multi-language Support",
+        "Guest Preference Learning",
+        "24/7 Availability",
+        "Analytics Dashboard"
+      ]
+    },
+    "voice": {
+      "title": "Voice Agents",
+      "tag": "Phone Integration",
+      "question": "Missed calls during peak hours?",
+      "description": "Voice agents answer calls 24/7, take orders, and manage reservations, freeing your staff to focus on in-person service.",
+      "features": [
+        "Natural Voice Interactions",
+        "24/7 Call Handling",
+        "Seamless Booking System",
+        "Multi-language Support",
+        "Peak Hour Management",
+        "Call Analytics"
+      ]
+    },
     "whatsapp": {
       "title": "WhatsApp Automation",
       "tag": "Message Integration",
       "question": "Struggling to retain customers?",
-      "description": "Send automated reminders, personalized offers, and feedback requests via WhatsApp to increase repeat visits and attract new guests with targeted campaigns for hotels and restaurants.",
+      "description": "Send automated reminders, personalized offers, and feedback requests via WhatsApp to increase repeat visits and attract new diners with targeted campaigns.",
       "features": [
         "Automated Updates",
         "Personalized Offers",
@@ -54,32 +82,35 @@
       ]
     },
     "startFreeTrial": "Start Your Free Trial",
-    "messageIntegration": "Message Integration"
+    "websiteIntegration": "Website Integration",
+    "messageIntegration": "Message Integration",
+    "phoneIntegration": "Phone Integration",
+    "learnMore": "Learn More"
   },
   "howItWorks": {
     "title": "How It Works",
     "steps": {
       "consultation": {
         "title": "Consultation",
-        "description": "We analyze your hotel or restaurant's unique challenges and goals."
+        "description": "We analyze your restaurant's unique challenges and goals."
       },
       "customization": {
         "title": "Customization",
-        "description": "Our team tailors WhatsApp automation to fit your operations seamlessly."
+        "description": "Our team tailors AI solutions to fit your operations seamlessly."
       },
       "implementation": {
         "title": "Implementation",
-        "description": "We integrate WhatsApp automation with minimal disruption."
+        "description": "We integrate chatbots, voice agents, and automation with minimal disruption."
       },
       "optimization": {
         "title": "Optimization",
-        "description": "Ongoing support ensures your WhatsApp tools evolve with your business."
+        "description": "Ongoing support ensures your AI tools evolve with your business."
       }
     }
   },
   "caseStudy": {
     "title": "Success Stories",
-    "subtitle": "How leading hotels and restaurants across Europe transformed their operations with WhatsApp automation, handling millions of guest interactions annually",
+    "subtitle": "How leading hotels and restaurants across Europe transformed their operations with AI, handling millions of guest interactions annually",
     "challenges": {
       "title": "The Challenges",
       "items": {
@@ -93,16 +124,20 @@
         },
         "missedOpportunities": {
           "title": "Missed Opportunities",
-          "description": "Lost revenue from unanswered messages and delayed responses"
+          "description": "Lost revenue from unanswered calls and delayed responses"
         }
       }
     },
     "solution": {
       "title": "Our Solution",
       "items": {
-        "whatsapp": {
-          "title": "WhatsApp Automation",
-          "description": "24/7 instant guest service via messaging"
+        "chatbot": {
+          "title": "AI Chatbot",
+          "description": "24/7 instant guest service"
+        },
+        "voice": {
+          "title": "Voice Agent",
+          "description": "Automated call handling"
         }
       }
     },
@@ -131,10 +166,30 @@
         }
       }
     },
+    "stats": {
+      "response": {
+        "value": "Faster Response Time",
+        "label": "From 10+ mins to 90 seconds"
+      },
+      "bookings": {
+        "value": "60%",
+        "label": "More Bookings"
+      },
+      "satisfaction": {
+        "value": "70%",
+        "label": "Increase in Guest Satisfaction"
+      },
+      "savings": {
+        "value": "€250,000",
+        "label": "Annual Savings"
+      }
+    },
     "benefits": {
-      "title": "Key Benefits",
+      "title": {
+        "title": "Key Benefits",
+      },
       "items": {
-        "operational": {
+        "operation": {
           "title": "Operational Excellence",
           "description": "Dramatic reduction in response times and workload"
         },
@@ -147,7 +202,8 @@
           "description": "Better guest satisfaction and staff efficiency"
         }
       }
-    }
+    },
+    "cta": "Transform Your Business Today"
   },
   "contact": {
     "title": "Contact Us",
@@ -155,7 +211,7 @@
     "form": {
       "name": "Your Name",
       "email": "Your Email",
-      "restaurant": "Hotel or Restaurant Name",
+      "restaurant": "Restaurant Name",
       "message": "Your Message",
       "submit": "Schedule a Free Consultation",
       "success": "Message Sent!"
@@ -177,15 +233,8 @@
     "learnMore": "Learn more",
     "accept": "Accept Cookies"
   },
-  "chatbot": {
-    "greeting": "Try me out! 👋",
-    "prompt": "Hello! How can I help you today?",
-    "start": "Start a conversation",
-    "placeholder": "Type your message...",
-    "error": "Sorry, I'm having trouble connecting. Please try again."
-  },
   "footer": {
-    "description": "Transforming hotels and restaurants with WhatsApp automation solutions that enhance guest experience and streamline operations.",
+    "description": "Transforming hotels and restaurants with AI-powered automation solutions that enhance guest experience and streamline operations.",
     "quickLinks": {
       "title": "Quick Links"
     },
@@ -201,5 +250,16 @@
       "success": "Thank you for subscribing!"
     },
     "rights": "All rights reserved."
+  },
+  "banner": {
+    "trial": "Book your free trial now and transform your hotel or restaurant with AI!"
+  },
+  "cta": {
+    "button": "Get Started"
+  },
+  "ctaBanner": {
+    "message": "Ready to Save Time and Grow Your Restaurant?",
+    "button": "Start Your Free 14-Day Trial",
+    "dismiss": "Dismiss banner"
   }
 }
